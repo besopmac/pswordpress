@@ -1,0 +1,494 @@
+/* Google Fonts import: Montserrat, Open Sans */
+@import 'https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400,700';
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/**********************
+The Flexbox Structure
+**********************/
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+main { flex: 1 auto; }
+
+
+/**********************
+The Header
+**********************/
+header {
+    color: #fff;
+    background: #43b3b0;
+}
+header > .container-fluid {
+    color: #fff;
+    background-color: #45a2a0;
+}
+.header-social {
+    height: 30px;
+    min-height: 30px;
+}
+.header-social .logo {
+    top: -20px;
+    width: 190px;
+    height: 110px;
+    padding: .5em;
+    position: absolute;
+    display: inline-block;
+    background-color: #fff;
+}
+.logo:before {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: -20px;
+    width: 0; height: 0;
+    border-top: 20px solid rgba(0,0,0,.2);
+    border-left: 20px solid transparent;
+    z-index: -1;
+}
+.social {
+    display: flex;
+    min-height: 30px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.social p,
+.social ul {
+    margin: 0;
+    padding: 0;
+}
+.social p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.social ul {
+    list-style: none;
+}
+.social ul li {
+    width: 18px;
+    margin-left: 5px;
+    text-align: center;
+    display: inline-block;
+}
+.social ul li a,
+.social ul li a:link,
+.social ul li a:visited {
+    color: #38cfcb;
+    text-decoration: none;
+}
+.menu-principal {
+    display: flex;
+    min-height: 70px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.menu-principal ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu-principal li { display: inline-flex; }
+.menu-principal li a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: .75em 1em;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+}
+.menu-principal li a:hover {
+    border-radius: .2em;
+    text-decoration: none;
+    background-color: #45A2A0;
+    /*box-shadow: 0 -2px 1px 0 rgba(69,162,160,.7);*/
+}
+
+
+/**********************
+The Hero Slider
+**********************/
+.hero {
+    padding: 0;
+}
+.slide .item {
+    z-index: -2;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+/**********************
+The Section Title
+**********************/
+.hero-intro {
+    background: url('../img/header-cursos.jpg') center center;
+    background-size: cover;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.hero-intro h1 {
+    color: #fff;
+    font-size: 2.25em;
+    font-weight: bold;
+    letter-spacing: -.05em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/**********************
+The Main
+**********************/
+.intro {
+    padding-top: 1.5%;
+}
+.intro .titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: -.05em;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+}
+.main-content {
+    padding: 3% 0;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+.main-content .conteudo p {
+    margin-bottom: 2em;
+}
+.breadcrumb-custom {
+    padding: 0;
+    color: #9E9E9E;
+    font-size: .9em;
+    font-weight: 400;
+    margin-bottom: 3em;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+.breadcrumb-custom a,
+.breadcrumb-custom a:hover,
+.breadcrumb-custom a:visited {
+    color: #9E9E9E;
+    text-decoration: none;
+}
+.breadcrumb-custom span {
+    color: #43b3b0;
+    font-weight: 700;
+}
+
+
+/** BOX STUDIO **/
+.box-studio {
+    color: #fff;
+    box-sizing: content-box;
+    background-color: #45a2a0;
+}
+.box-cursos h3,
+.box-studio h3 {
+    padding: .75em 1em .5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+}
+.box-cursos p,
+.box-studio p {
+    margin: 0;
+    padding: 0 1.5em 2em;
+    font-size: .9em;
+    line-height: 2;
+    font-weight: 300;
+}
+.box-studio img,
+.slide-cursos .carousel-content img {
+    min-width: 100%;
+}
+
+
+/** BOX CURSO **/
+.box-cursos {
+    display: flex;
+    flex-direction: column;
+}
+.box-cursos h3 {
+    color: #45a2a0;
+    padding: .25em 0 .25em;
+}
+.box-cursos p {
+    padding: 0 0 1.5em;
+    font-weight: 400;
+}
+
+.box-cursos img {
+    min-width: 100%;
+}
+
+
+/** BOX DEPOIMENTO **/
+.box-depoimento {
+    margin: 3em auto 1.5em;
+}
+.box-depoimento .carousel-dep {
+    width: 100%;
+    height: 175px;
+    padding: 0 25%;
+}
+.box-depoimento .carousel-content {
+    color: rgba(0,0,0,.6);
+    display: flex;
+    font-size: 1.1em;
+    margin-top: 5%;
+    line-height: 1.75;
+    align-items: center;
+    font-style: italic;
+}
+.box-depoimento .carousel-content .assinatura-depoimento {
+    margin-top: 15px;
+    font-style: normal;
+}
+.box-depoimento .carousel-content .assinatura-depoimento span {
+    color: #45a2a0;
+    font-weight: bold;
+}
+
+.carousel-button {
+    width: 60px;
+    height: 100%;
+}
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}
+
+/**********************
+The Flexbox Grid
+**********************/
+.button {
+    color: #43b3b0;
+    padding: .5rem;
+    font-size: .9em;
+    font-weight: 700;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #43b3b0;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.button:hover {
+    color: #45a2a0;
+    text-decoration: none;
+    border: 1px solid #45a2a0;
+}
+.button-block {
+    width: 100%;
+    display: block;
+}
+.button-small {
+    display: inline;
+}
+.cards {
+    margin: 0 0 1em;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.cards-item {
+    display: flex;
+    padding: 1rem;
+}
+@media (min-width: 40rem) {
+    .cards-item {
+        width: 50%;
+    }
+}
+@media (min-width: 56rem) {
+    .cards-item {
+        width: 33.3333%;
+    }
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: .25rem;
+    background-color: white;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,.25);
+}
+.card:hover .card-image {
+    -webkit-filter: contrast(100%);
+            filter: contrast(100%);
+}
+.card-content {
+    padding: 1em;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+.card-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    -webkit-filter: contrast(70%);
+            filter: contrast(70%);
+}
+.card-image::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+@media (min-width: 40rem) {
+    .card-image::before {
+        padding-top: 66.6%;
+    }
+}
+.card-image--flowers   { background-image: url(https://unsplash.it/800/600?image=82); }
+.card-image--river     { background-image: url(https://unsplash.it/800/600?image=11); }
+.card-image--record    { background-image: url(https://unsplash.it/800/600?image=39); }
+.card-image--fence     { background-image: url(https://unsplash.it/800/600?image=59); }
+.card-title {
+    color: #696969;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.card-text {
+    flex: 1 1 auto;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: .5em 0 1.5em;
+}
+
+
+/**********************
+The Footer
+**********************/
+.form-custom {
+    padding: 1.75em;
+    border-radius: 2px;
+    border: 1px solid #f0f0f0;
+}
+.form-custom h3 {
+    margin: 0 0 .75em;
+    font-weight: 700;
+}
+.form-custom p {
+    line-height: 1.5;
+    margin-bottom: 2em;
+}
+.form-custom .observacao {
+    color: #45a2a0;
+    font-size: .7em;
+    font-weight: 700;
+    margin: 1em 0 2em;
+    text-transform: uppercase;
+}
+.form-custom .input-custom {
+    margin-bottom: .5em;
+}
+.form-custom p strong { color: #45a2a0; }
+.form-custom .btn-form {
+    color: #fff;
+    font-size: .85em;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    background-color: #45a2a0;
+    border: 1px solid #45a2a0;
+}
+
+/**********************
+The Footer
+**********************/
+footer {
+    color: #fff;
+    background: #f60;
+    text-align: center;
+}
+footer > .container-fluid {
+    color: #F60;
+    background: #be4c00;
+}
+
+.newsletter-box {
+    padding: 3rem 0;
+    font-size: 1.5rem;
+}
+.newsletter-box h3 {
+    margin: 0 0 .25rem 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -.05em;
+    font-family: 'Montserrat', sans-serif;
+}
+.newsletter-box form {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.newsletter-box .btn-lg {
+    border-radius: 0;
+    background: #be4c00;
+    font-weight: 700;
+    border: 1px solid #be4c00;
+    text-transform: uppercase;
+}
+.newsletter-box .input-clear {
+    background: transparent;
+    border: 0 solid transparent;
+    border-bottom: 1px solid #be4c00;
+    font-size: 2.25rem;
+    line-height: 1.33333;
+    padding: 10px 16px 10px 0;
+    margin-right: 10px;
+    font-family: 'Open Sans';
+    letter-spacing: -.05em;
+    width: 31.5%;
+}
+.newsletter-box .input-clear::-webkit-input-placeholder { color: #be4c00; }
+.newsletter-box .input-clear::-moz-placeholder          { color: #be4c00; }
+.newsletter-box .input-clear:-ms-input-placeholder      { color: #be4c00; }
+.newsletter-box .input-clear:-moz-placeholder           { color: #be4c00; }
+
+.dev-copy {
+    min-height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.dev-copy p,
+.tab-social p {
+    margin: 0;
+    font-size: 80%;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.dev-copy .getec {
+    text-align: right;
+    margin-left: auto;
+}
+.dev-copy .copyright {
+    text-align: left;
+}
+.dev-copy span { color: #fff; }
