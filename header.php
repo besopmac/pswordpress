@@ -20,7 +20,7 @@
         <div class="container-fluid">
             <div class="container header-social">
                 <h1 class="logo">
-                    <img src="img/logo-physio.png" alt="Physio Studio">
+                    <img src="<?php bloginfo('template_url'); ?>/img/logo-physio.png" alt="Physio Studio">
                 </h1>
                 <div class="social">
                     <p>Rua Barão de Lucena, 81 - Fundos. Botafogo - Rio de Janeiro</p>
@@ -33,10 +33,24 @@
             </div>
         </div>
         <div class="container menu-principal">
-            <ul>
-                <li><a href="studio.html">O studio</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+            <!-- <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#">O studio</a></li>
+                <li role="presentation"><a href="#">Cursos</a></li>
+                <li role="presentation"><a href="#">Contato</a></li>
+            </ul> -->
+
+            <?php
+                wp_nav_menu( array(
+                    'menu'              => 'primary',
+                    'theme_location'    => 'primary',
+                    'depth'             => 2,
+                    'container'         => 'div',
+                    'container_class'   => 'collapse navbar-collapse',
+                    'container_id'      => 'bs-example-navbar-collapse-1',
+                    'menu_class'        => 'nav navbar-nav',
+                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                    'walker'            => new wp_bootstrap_navwalker())
+                );
+            ?>
         </div>
     </header>
