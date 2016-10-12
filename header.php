@@ -20,7 +20,7 @@
         <div class="container-fluid">
             <div class="container header-social">
                 <h1 class="logo">
-                    <img src="<?php bloginfo('template_url'); ?>/img/logo-physio.png" alt="Physio Studio">
+                    <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo-physio.png" alt="Physio Studio"></a>
                 </h1>
                 <div class="social">
                     <p>Rua Barão de Lucena, 81 - Fundos. Botafogo - Rio de Janeiro</p>
