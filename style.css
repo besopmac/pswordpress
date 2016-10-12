@@ -49,7 +49,7 @@ header > .container-fluid {
     min-height: 30px;
 }
 .header-social .logo {
-    top: -20px;
+    top: 12px;
     width: 190px;
     height: 110px;
     padding: .5em;
@@ -125,7 +125,26 @@ header > .container-fluid {
     background-color: #45A2A0;
     /*box-shadow: 0 -2px 1px 0 rgba(69,162,160,.7);*/
 }
-
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    color: #45A2A0;
+    background-color: #FFF;
+    border-radius: .2em .2em 0 0;
+}
+.dropdown-menu {
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+.dropdown-menu li a {
+    color: #45A2A0;
+    font-size: 1.25rem;
+    background-color: none;
+    text-transform: capitalize;
+}
+.dropdown-menu li a:hover {
+    color: #F60;
+    border-radius: 0;
+    background-color: transparent;
+}
 
 /**********************
 The Hero Slider

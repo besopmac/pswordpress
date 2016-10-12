@@ -33,12 +33,6 @@
             </div>
         </div>
         <div class="container menu-principal">
-            <!-- <ul class="nav nav-pills">
-                <li role="presentation" class="active"><a href="#">O studio</a></li>
-                <li role="presentation"><a href="#">Cursos</a></li>
-                <li role="presentation"><a href="#">Contato</a></li>
-            </ul> -->
-
             <?php
                 wp_nav_menu( array(
                     'menu'              => 'primary',
