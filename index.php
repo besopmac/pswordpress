@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-    <section class="hero">
+    <?php do_action('slideshow_deploy', '34'); ?>
+
+    <!--section class="hero">
         <div id="carousel-destaque" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carousel-destaque" data-slide-to="0" class="active"></li>
@@ -22,7 +24,7 @@
             <a class="left carousel-control" href="#carousel-destaque" role="button" data-slide="prev"><img class="carousel-button" aria-hidden="true" src="<?php bloginfo('template_url'); ?>/img/back-white.svg"></a>
             <a class="right carousel-control" href="#carousel-destaque" role="button" data-slide="next"><img class="carousel-button" aria-hidden="true" src="<?php bloginfo('template_url'); ?>/img/next-white.svg"></a>
         </div>
-    </section>
+    </section-->
 
     <main>
         <section class="intro">
@@ -32,7 +34,8 @@
                     <div class="col-md-7">
                         <h2 class="titulo">Cursos</h2>
                         <section class="box-cursos">
-                            <img src="<?php bloginfo('template_url'); ?>/img/img-cursos.jpg" class="img-responsive" alt="Yoga Image">
+                            <!--img src="< ?php bloginfo('template_url'); ?>/img/img-cursos.jpg" class="img-responsive" alt="Yoga Image"-->
+                            <?php do_action('slideshow_deploy', '39'); ?>
                             <h3>Pilates</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et fringilla purus. Sed in ligula porttitor, dapibus ex at, vehicula diam. Proin vel turpis vel tellus auctor posuere. Sed risus lectus, faucibus nec congue quis, finibus ut odio. Pellentesque nec iaculis ipsum. Nullam sed dapibus sapien, eget congue leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras cursus leonibh, at rutrum dolor iaculis fermentum.</p>
                             <p><a class="btn btn-lg button" href="cursos.html" role="button">confira todos os cursos</a></p>
